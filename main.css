@@ -4,7 +4,13 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    background-color:#202528;
+    /* background-color:#202528; */
+}
+body {
+  background-image: url("5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 h1{
     text-align: center;
@@ -34,10 +40,11 @@ button {
     cursor: pointer;
     margin: 8px;
     font-size: 20px;
-    color:bisque;
-    background-color: #6b5b95;
+    color:rgb(10, 10, 10);
+    background-color: hsl(220, 44%, 81%);
     border-color: #202528;
     transition: background-color 0.3s;
+    border-color: black;
 }
 .button:hover{
     background-color: cadetblue;
@@ -45,7 +52,7 @@ button {
 }
 
 .description{
-    font-size: 20px;
+    font-size: 25px;
     color: beige;
     margin: 10px 150px; /*tb-lr*/
     text-align: center;
@@ -56,7 +63,7 @@ p{
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    color:beige;
+    color:rgb(3, 3, 3);
     font-size: 22px;
     cursor: pointer;
     margin-bottom: 70px;
