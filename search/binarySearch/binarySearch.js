@@ -141,10 +141,8 @@ let dataOutput=document.getElementById("data_text");
 async function binarySearch(array){
   let bars=document.querySelectorAll(".bar");
 
-  //Extracting value of element to be searched
   let num=document.getElementById("inputedData").value;
-  //console.log(num);
- // num=`${num*4}px`;
+
 
   for(let i=0;i<bars.length;i++)
   {
@@ -154,7 +152,7 @@ async function binarySearch(array){
   output.innerText="";
   output2.innerText="";
   dataOutput.innerText="";
-  //algorithm
+  
   let start=0;
   let end=(bars.length-1);
   let pos=-1;
@@ -165,13 +163,13 @@ async function binarySearch(array){
     playNote(500);
     bars[midd].style.backgroundColor="yellow";
     await timeDelay(delay);
-    //let value=Number(bars[midd].childNodes[0].innerHTML);
+
     let value=array[midd];
     console.log(value);
     await timeDelay(delay);
     await timeDelay(delay);
     await timeDelay(delay);
-    //console.log("hi");
+
     if(value==num)
     {
       pos=midd;
@@ -187,12 +185,12 @@ async function binarySearch(array){
       {
         bars[i].style.backgroundColor="grey";
       }
-     // console.log("hi2");
+     
       await timeDelay(delay);
       output.innerText="Element Found.";
       output2.innerText="The Position Of element In array is:";
       dataOutput.innerText=pos;
-      //console.log("hi1");
+    
       break;
     }
    if(value>num)
@@ -206,10 +204,10 @@ async function binarySearch(array){
       {
         bars[i].style.backgroundColor="grey";
       }
-      //console.log("hi2");
+      
       await timeDelay(delay);
     }
-    else //if(value<num)
+    else 
     {
       start=midd+1;
       await timeDelay(delay);
@@ -220,7 +218,7 @@ async function binarySearch(array){
       {
         bars[i].style.backgroundColor="grey";
       }
-      //console.log("hi3");
+    
       await timeDelay(delay);
     }
   }
